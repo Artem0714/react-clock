@@ -1,5 +1,6 @@
 import React from "react";
 import Clock from "./components/Clock";
+import { InputElement } from "./components/InputElement";
 import Training from "./components/Training";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
       <Clock timer="1000" />
       <Clock timer="2000" />
       <Clock timer="5000" />
-      <Training />
+      <InputElement />
+
     </div>
   );
 }
