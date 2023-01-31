@@ -1,7 +1,7 @@
 import React from "react";
+import Calculator from "./components/Calculator";
 import Clock from "./components/Clock";
-import { InputElement } from "./components/InputElement";
-import Training from "./components/Training";
+import TemperatureInput from "./components/TemperatureInput";
 
 function App() {
   return (
@@ -9,8 +9,7 @@ function App() {
       <Clock timer="1000" />
       <Clock timer="2000" />
       <Clock timer="5000" />
-      <InputElement />
-
+      <Calculator />
     </div>
   );
 }

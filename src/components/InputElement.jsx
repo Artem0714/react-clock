@@ -29,20 +29,20 @@ import React, { useState } from "react";
 //     )
 // }
 
-export const InputElement = () => {
-    const [value, setValue] = useState(0)
+// export const InputElement = () => {
+//     const [value, setValue] = useState(0)
 
-    const items = ['1', '2', '3']
+//     const items = ['1', '2', '3']
 
-    const handlerChange = (e) => {
-        setValue(e.target.value)
-    }
+//     const handlerChange = (e) => {
+//         setValue(e.target.value)
+//     }
 
-    return (
-        <select value={value} onChange={(e) => {handlerChange}}>
-            {items.map((i) => (
-                <option key={i} value={i}>{i}</option>
-            ))}
-        </select>
-    )
-}
+//     return (
+//         <select value={value} onChange={() => {handlerChange}}>
+//             {items.map((i) => (
+//                 <option key={i} value={i}>{i}</option>
+//             ))}
+//         </select>
+//     )
+// }
