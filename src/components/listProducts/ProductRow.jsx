@@ -1,5 +1,5 @@
 import React from "react";
-import './css/productrow.css';
+import './css/index.css';
 
 export function ProductRow (props) {
     return (

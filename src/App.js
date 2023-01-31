@@ -1,8 +1,5 @@
-import React from "react";
-import Calculator from "./components/Calculator";
-import Clock from "./components/Clock";
-import { ProductRow } from "./components/listProducts/ProductRow";
-import TemperatureInput from "./components/TemperatureInput";
+import React, { useState } from "react";
+import FilterableProductTable from "./components/listProducts/FilterableProductTable";
 
 const products = [
   {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
@@ -16,9 +13,7 @@ const products = [
 function App() {
   return (
     <div>
-      {products.map((product) => {
-        return <ProductRow key={product.name} name={product.name} price={product.price} />
-      })}
+      <FilterableProductTable />
     </div>
   );
 }
