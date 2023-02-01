@@ -23,14 +23,15 @@ export function ProductTable (props) {
             </div>
             <div>
                 <ProductCategoryRow category='Sporting Goods' />
+                
                 {products.map((product) => {
-                    if (product.category === 'Sporting Goods' && product.name.toLowerCase().includes(props.filterText)) {
+                    if (product.category === 'Sporting Goods' && product.name.toLowerCase().includes(props.state.filterText) && (!props.state.inStonkOnly||product.stocked)) {
                         return <ProductRow key={product.name} name={product.name} price={product.price} />
                     }
                 })}
                 <ProductCategoryRow category='Electronics' />
                 {products.map((product) => {
-                    if (product.category === 'Electronics' && product.name.toLowerCase().includes(props.filterText)) {
+                    if (product.category === 'Electronics' && product.name.toLowerCase().includes(props.state.filterText) && (!props.state.inStonkOnly||product.stocked)) {
                         return <ProductRow key={product.name} name={product.name} price={product.price} />
                     }
                 })}
